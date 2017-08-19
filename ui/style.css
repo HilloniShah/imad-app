@@ -20,3 +20,11 @@ body {
     height: 200px;
 }
 
+.container{
+    padding-top:50px;
+    padding-left:10px;
+    padding-right:10px;
+    font-family:monotype cursiva;
+    background-color:cyan;
+    color:blue;
+}

@@ -5,38 +5,39 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne={
-    title:'Article-one | Hilloni',
-    heading:'article-one',
-    date:'August 21, 2017',
-    content: ` <p>
-                    This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course.
-                </p>
-                <p>
-                    This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course.
-                </p>`
-    
-};
-
-var articleTwo={
-    title:'Article-Two | Hilloni',
-    heading:'article-two',
-    date:'August 22, 2017',
-    content: ` <p>
-                    This is the content of my second artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. 
-                </p>`
-    
-};
-
-var articleThree={
-    title:'Article-three | Hilloni',
-    heading:'article-three',
-    date:'August 23, 2017',
-    content: ` <p>
-                    This is the content of my third artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course.
-                </p>`
-    
-};
+var articles={
+        articleOne={
+            title:'Article-one | Hilloni',
+            heading:'article-one',
+            date:'August 21, 2017',
+            content: ` <p>
+                            This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course.
+                        </p>
+                        <p>
+                            This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course.
+                        </p>`
+            
+        },
+        
+        articleTwo={
+            title:'Article-Two | Hilloni',
+            heading:'article-two',
+            date:'August 22, 2017',
+            content: ` <p>
+                            This is the content of my second artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. 
+                        </p>`
+            
+        };
+        
+        articleThree={
+            title:'Article-three | Hilloni',
+            heading:'article-three',
+            date:'August 23, 2017',
+            content: ` <p>
+                            This is the content of my third artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course.
+                        </p>`
+            
+        };
 
 function createTemplate(data){
     

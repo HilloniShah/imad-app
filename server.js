@@ -7,9 +7,9 @@ app.use(morgan('combined'));
 
 var articles={
         articleOne:{
-            title:'Article-one | Hilloni',
-            heading:'article-one',
-            date:'August 21, 2017',
+            title:`Article-one | Hilloni`,
+            heading:`article-one`,
+            date:`August 21, 2017`,
             content: ` <p>
                             This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course. This is the content of my first artice. I am doing a course on Introduction to Mobile Application Development. I enjoy learning this course.
                         </p>

@@ -5,10 +5,10 @@ element.innerHTML="Hilloni!!";
 
 var image=document.getElementById("main");
 
-var moveLeft=0;
+var marginLeft=0;
 
 function moveRight(){
-    moveLeft=moveLeft+5;
+    marginLeft=moveLeft+5;
     img.style.marginLeft=marginLeft + 'px';
 }
 
